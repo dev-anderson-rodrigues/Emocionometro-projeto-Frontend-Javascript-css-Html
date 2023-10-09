@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 100vw;
+    margin: 0px;
+    font-family: 'Nunito', sans-serif;
+}
+main {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #F5F4F9;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+.coracao-login{
+    width: 60%;
+    height: 100vh;
+}
+
+.campo input[type="text"],
+.campo textarea,
+.campo input[type="password"] {
+  padding: 0.5em;
+  border: 2px solid #00C247;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  display: block;
+  width: 100%;
+  padding-top: 15px;
+  font-size: 15px;
+  height: 50px;
+  
+}
+.campo {
+    color: white;
+    position: relative;
+}
+.content-senha {
+    color: #00C247;
+    position: absolute;
+    bottom: 40px;
+    left: 10px;
+    padding: 2px;
+    background-color: white;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: left;
+    color: black;
+}
+
+button {
+    border: none;
+    margin-top: 7%;
+    font-family: sans-serif;
+    font-size: 1em;
+    border-radius: 5px;
+    font-size: 1.2em;
+    background: #00C247;
+    border: 0;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.5em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(57, 173, 53, 0.5);
+    display: relative;
+}
+.botao {
+    cursor: pointer;
+    width: 100%;
+    color: white;
+}
+.botao:hover {
+    background: #181515;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+}
+.grupo {
+    
+    background-color: #ffffff;
+    height: 100vh;
+    width: 40%;
+    padding: 150px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.logo-section {
+    margin-top: 50px;
+    display: flex;
+}
+a {
+    text-decoration: none;
+  
+ }
+.support {
+    display: flex;
+    justify-content: space-around;
+}
+@media only screen and (max-width: 1750px){
+    .coracao-login{
+        width: 60%;
+        height: 100vh;
+        
+    }
+    #img-login {
+        margin-top: 100px;
+        width: 700px;
+        height: 80vh;
+    }
+    .logo-section {
+        margin-top: 150px;
+        display: flex;
+    }
+    .grupo {
+        background-color: #ffffff;
+        height: 100vh;
+        width: 40%;
+        padding: 100px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+@media only screen and (max-width: 1150px) {
+    .coracao-login{
+        display: none;
+    }
+    .grupo {
+        height: auto;
+        width: 100%;
+        padding: 20;
+        margin: 100px;
+     }
+}
+@media only screen and (max-width: 580px) {
+    .coracao-login{
+        display: none;
+    }
+    .grupo {
+        font-size: 2vh;
+        width: 100%;
+        padding: 30px;
+        margin: 10px;
+    }
+}

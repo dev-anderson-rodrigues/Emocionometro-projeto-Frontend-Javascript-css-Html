@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME - Novo Professor</title>
+    <link rel="stylesheet" href="../../assets/css/novoProfessor.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="../../assets/js/cadastrar-professor.js" defer></script>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <img src="../../assets/images/logo-login.png" alt="logo" id="logo" />
+
+      <a href="#" class="link-user-header"
+        ><i class="fa-regular fa-user" id="icon" style="color: #7e600c"></i
+        >Usuário</a
+      >
+    </header>
+    
+    <section>
+      <div class="borda-cabecalho1"></div>
+      <div class="borda-cabecalho2"></div>
+      <div class="borda-cabecalho3"></div>
+      <div class="borda-cabecalho4"></div>
+      <div class="borda-cabecalho5"></div>
+    </section>
+
+    <div class="conteudo">
+     
+        <aside class="cabecalho">
+            <ul>
+                <li>
+                    <a href="../../pages/home/home.html">
+                        <i class="fas fa-home" id="icon-home"></i>
+                        <span>Início</span>
+                    </a>
+                </li>
+
+                <div id="dropdown">
+                    <li>
+                        <a href="#" id="btn">
+                            <i class="fas fa-user-plus" ></i>
+                             <span>Usuários</span>
+                            <i class="fas fa-chevron-right" id="seta-user"></i>
+                        </a>
+                    </li>
+
+                    <div id="drop">
+                        <li id="user1">
+                            <a href="./professor.html" class="submenu-user"><span>Professor</span></a>
+                        </li>
+                        <li id="user2">
+                            <a href="../aluno/aluno.html" class="submenu-user" ><span>Aluno</span></a>
+                        </li>
+                    </div>
+                </div>
+
+                <li>
+                    <a href="../../pages/emocionometro/emocionometro.html">
+                        <i class="fas fa-heart" ></i
+                        ><span>Emocionômetro</span></a>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <a href="../../pages/login/Perfil/perfil.html" id="tag-a-pefil"
+                    ><i class="fas fa-user" ></i><span id="MP">Meu perfil</span></a
+                  >
+                </li>
+
+                <li>
+                    <a href="/index.html"><i class="fas fa-sign-out-alt" ></i><span>Sair</span></a>
+                </li>
+            </ul>
+        </aside>
+
+      <main class="container" id="content">
+        <div class="line-professor">
+            <div class="titulo-novo-prof"><a href="../professor/professor.html">
+                <img src="../../assets/images/seta voltar.svg" alt="" width="25px" height="25px"></a>
+                <h4>Novo Usuário <i class="fas fa-chevron-right" id="seta-professor"></i> Professor</h4>
+            </div>
+
+          <form class="table" id="formulario">
+            <h5 class="titulo-tabela">Dados do usuário</h5>
+
+            <ul id="tabela">
+                
+                <li><label for="nome"> Nome</label><br><input type="text" name="nome" required></li>
+
+                <li><label for="perfil"> Perfil</label><br>
+                    <select type="select" name="perfil" required>
+                    <option selected disabled value="Selecione">Selecione</option>
+                    <option>Professor</option>
+                    <option>Aluno</option>
+                  </select></li>
+
+                <li><label for="disciplina"> Disciplina</label><br><input type="text" name="disciplina" required></li>
+
+                <li class="li-acao"><span>Ativo</span><label for="acao"></label><input type="checkbox" name="acao" id="switch" required></li>
+
+            </ul>
+         
+            <button id="btn" type="submit">Salvar</button>
+              
+          </form>
+        </div>
+
+        <div class="faleconosco" id="fale-conosco">
+          <div class="text-faleconosco" id="text-faleconosco">Fale conosco</div>
+          <a href="#"><i class="fas fa-envelope"id="icon-fale-conosco"></i></a>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
