@@ -1,0 +1,1 @@
+# Emocionometro-projeto-Frontend
