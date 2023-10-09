@@ -23,8 +23,7 @@ main {
     height: 100vh;
 }
 .coracao-login{
-    width: 60%;
-    height: 100vh;
+    margin-right: 150px;
 }
 .campo input[type="text"],
 .campo textarea,
@@ -137,9 +136,8 @@ a {
 
 @media only screen and (max-width: 1750px){
     .coracao-login{
-        width: 60%;
-        height: 100vh;
-        
+        width: 70%;
+        height: 100vh;  
     }
     #img-login {
         margin-top: 100px;
