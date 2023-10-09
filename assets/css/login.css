@@ -22,9 +22,7 @@ main {
     width: 100%;
     height: 100vh;
 }
-.coracao-login{
-    margin-right: 150px;
-}
+
 .campo input[type="text"],
 .campo textarea,
 .campo input[type="password"] {
@@ -135,15 +133,7 @@ a {
 }
 
 @media only screen and (max-width: 1750px){
-    .coracao-login{
-        width: 70%;
-        height: 100vh;  
-    }
-    #img-login {
-        margin-top: 100px;
-        width: 700px;
-        height: 80vh;
-    }
+    
     .logo-section {
         margin-top: 150px;
         display: flex;
@@ -151,7 +141,7 @@ a {
     .grupo {
         background-color: #ffffff;
         height: 100vh;
-        width: 40%;
+        width: 50%;
         padding: 100px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         border-radius: 10px;
