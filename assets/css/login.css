@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 body {
+    overflow: hidden;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
