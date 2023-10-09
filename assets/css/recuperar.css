@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 body {
+    overflow: hidden;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -24,7 +25,6 @@ main {
 
 .coracao-recuperar{
     width: 60%;
-    height: 100vh;
 }
 
 .logo-section {
