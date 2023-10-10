@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
     <link rel="stylesheet" href="../../assets/css/login.css" />
+    <script src="/assets/js/login.js" defer></script>
   </head>
   <body>
     <main class="container">
@@ -12,7 +13,7 @@
         <img
           src="../../assets/images/image.png"
           alt=""
-          id="img-login"
+          id="" width=""
           
         />
       </div>
@@ -24,24 +25,24 @@
 
         <h1 class="login-title">Faça seu login</h1>
 
-        <form action="" method="get">
+        <form id="miFormulario">
           
           <div class="campo">
             <div class="content-email">E-mail</div>
+            <label for="email"></label>
             <input
               type="text"
-              name="login"
-              id="login"
+              id="email"
               placeholder="Email ou Número de telefone"
             />
           </div>
           <div class="campo">
             <div class="content-senha">Senha</div>
             <br />
+            <label for="password"></label>
             <input
               type="password"
-              name="Senha"
-              id="Senha"
+              id="password"
               placeholder="Senha"
             />
           </div>
@@ -59,8 +60,9 @@
             </div>
           </div>
 
-          <button class="botao" id="Entrar"><a href="/pages/login/loading/loading.html" class="botao">Entrar</a></button><br />
-          
+          <!-- <button class="botao" id="Entrar"><a href="/pages/login/loading/loading.html" class="botao">Entrar</a></button><br /> -->
+          <button class="botao" id="Entrar" class="botao" type="submit" value="submit">Entrar</button>
+
           <div class="ou-entao">
             <div class="linha-traco"></div>
             <div>Ou então</div><div class="linha-traco"></div>
@@ -69,7 +71,6 @@
 
           <button class="botao">Cadastre-se</button>
         </form>
-
         
       </div>
     </main>

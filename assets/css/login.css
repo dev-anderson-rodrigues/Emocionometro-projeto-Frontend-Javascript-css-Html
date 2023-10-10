@@ -28,14 +28,14 @@ main {
 .campo textarea,
 .campo input[type="password"] {
   padding: 0.5em;
-  border: 2px solid #00C247;
+  border: 1px solid #BDBDBD;
   border-radius: 15px;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
   display: block;
   width: 100%;
   padding-top: 15px;
   font-size: 15px;
   height: 50px;
+  outline: none;
   
 }
 .campo {
@@ -43,7 +43,7 @@ main {
     position: relative;
 }
 .content-email {
-    color: #00C247;
+    color: #BDBDBD;
     position: absolute;
     bottom: 23px;
     left: 10px;
@@ -52,7 +52,7 @@ main {
     background-color: white;
 }
 .content-senha {
-    color: #00C247;
+    color: #BDBDBD;
     position: absolute;
     bottom: 23px;
     left: 10px;
@@ -80,7 +80,7 @@ h1 {
 button {
     border: none;
     margin-top: 7%;
-    font-family: sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 1em;
     border-radius: 5px;
     font-size: 1.2em;

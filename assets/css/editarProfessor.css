@@ -33,7 +33,7 @@ header .link-user-header {
     padding-right: 15px;
     font-size: 15px;
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Nunito', sans-serif;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -102,6 +102,7 @@ aside {
     padding-bottom: 50px;
     overflow: hidden;
     border-bottom-left-radius: 15px;
+    transition: width 1s;
 }
 aside:hover {
     width: 250px;
@@ -137,7 +138,7 @@ li #MP {
 a {
     text-align: center;
     color: #AA6F34;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 #drop li:hover{
     background-color: #F48221;
@@ -191,21 +192,7 @@ main #seta-professor {
 .line-professor {
     width: 100%;
 }
-.line-professor .pesquisaAdd-user {
-    display: none;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 27px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.pesquisaAdd-user #pesquisa{
-    padding: 10px;
-    border: solid 2px #E0E0E0;
-    border-radius: 10px;
-    width: 250px;
-    outline: none;
-}
+
 .search {
     position: relative;
 }
@@ -215,22 +202,6 @@ main #seta-professor {
     top: 11px;
     color: #F9E423;
     border:none;   
-}
-.pesquisaAdd-user .add-user {
-    padding: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border: none;
-    text-decoration: none;
-    font-family: 'Nunito', sans-serif;
-    font-family: 'Poppins', sans-serif;
-    font-size: 10px;
-    border-radius: 5px;
-    color: white;
-    background-color:   #00C247;
-    display: flex;
-    align-items: center;
-    gap: 5px;
 }
 
 main .table {
@@ -246,7 +217,6 @@ main .table {
     padding-top: 20px;
     padding-left: 20px;
     font-family: 'Nunito', sans-serif;
-    font-family: 'Poppins', sans-serif;
     font-size: 12px;
     color: #212121;
 }
@@ -258,8 +228,7 @@ main .table {
     margin-bottom: 30px;
     border: none;
     font-family: 'Nunito', sans-serif;
-    font-family: 'Poppins', sans-serif;
-    font-size: 10px;
+    font-size: 12px;
     border-radius: 5px;
     color: white;
     margin-left: 20px;
@@ -328,7 +297,7 @@ input[type="checkbox"]:checked:before {
 
 }
 input[type="checkbox"]:checked::after {
-    content: "ON";
+    content: "";
     color: #fff;
     left: 80px;
 }

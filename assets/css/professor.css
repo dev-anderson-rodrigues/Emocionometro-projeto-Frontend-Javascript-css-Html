@@ -102,6 +102,7 @@ aside {
     padding-bottom: 50px;
     overflow: hidden;
     border-bottom-left-radius: 15px;
+    transition: width 1s;
 }
 aside:hover {
     width: 250px;
@@ -217,7 +218,7 @@ main #seta-professor {
     border: none;
     text-decoration: none;
     font-family: 'Nunito', sans-serif;
-    font-size: 10px;
+    font-size: 12px;
     border-radius: 5px;
     color: white;
     background-color:   #00C247;
