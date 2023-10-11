@@ -202,7 +202,7 @@ main #seta-professor {
 }
 .pesquisaAdd-user #pesquisa{
     padding: 10px;
-    border: solid 2px #E0E0E0;
+    border: solid 1px #E0E0E0;
     border-radius: 10px;
     width: 250px;
     outline: none;
@@ -268,7 +268,7 @@ input, select {
     width: 200px;
     height: 30px;
     font-size: 15px;
-    border: solid 2px #E0E0E0;
+    border: solid 1px #E0E0E0;
     outline: none;
      
 }

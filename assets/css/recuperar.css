@@ -50,7 +50,7 @@ main {
     position: relative;
 }
 .contant-email {
-    color: black;
+    color: #00C247;
     position: absolute;
     bottom: 40px;
     left: 10px;
@@ -101,6 +101,7 @@ button {
 }
 .grupo .tag-esqueceu-a-senha{
     display: flex;
+    color: #424242;
 }
 a {
     text-decoration: none;

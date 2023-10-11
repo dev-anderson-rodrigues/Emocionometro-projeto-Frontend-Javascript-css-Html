@@ -41,6 +41,7 @@ header .link-user-header {
     gap: 6px;
     color: #000000;
 }
+
 .link-user-header #icon {
     width: 10px;
     height: 10px;
@@ -124,6 +125,7 @@ li a{
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 22px;
+    font-weight: 400;
     padding-right: 150px;
 }
 li a:hover{
@@ -138,6 +140,7 @@ li #MP {
 a {
     text-align: center;
     color: #AA6F34;
+    font-weight: 400;
     font-family: 'Nunito', sans-serif;
 }
 #drop li:hover{
