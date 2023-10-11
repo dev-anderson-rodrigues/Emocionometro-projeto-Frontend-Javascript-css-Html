@@ -1,6 +1,6 @@
 # Emocionometro-projeto-Frontend
 
-Projeto fim de módulo, tcc Emocionometro! contain(' javascript, css, html, sevrer.json ')
+Projeto fim de módulo, tcc Emocionometro! contain(' javascript, css, html, server.json ')
 
 https://emocionometro-projeto-frontend.vercel.app/
 
