@@ -1,6 +1,6 @@
 let corpoTabela = "";
 async function buscarProfessores() {
-  let urlAPI = await fetch("https://json-teste-eight.vercel.app/professores");
+  let urlAPI = await fetch("https://json-teste-eight.vercel.app/professores?_sort=nome&_order=desc");
   let professor = await urlAPI.json();
   let divUsuarios = document.getElementById("usuarios-prof");
   professor.forEach((usuario) => {
@@ -18,7 +18,6 @@ async function buscarProfessores() {
         ` + corpoTabela;
         
   });
-//   console.log(corpoTabela);
   divUsuarios.innerHTML = corpoTabela;
 }
 buscarProfessores();
@@ -56,6 +55,7 @@ const pesquisaProfessores = async () => {
 
 };
 const excluirProfessor = async(id)=>{
+    if(confirm('Deseja realmente deletar o usuario?' + id))
     await fetch(`https://json-teste-eight.vercel.app/professores/${id}`,{method:'DELETE'})
     window.location="professor.html"
 }

@@ -86,7 +86,6 @@ h1 {
 }
 button {
     border: none;
-    margin-top: 7%;
     font-family: 'Nunito', sans-serif;
     font-size: 1em;
     border-radius: 5px;
@@ -99,9 +98,12 @@ button {
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
     text-shadow: 1px 1px 1px rgba(57, 173, 53, 0.5);
     display: relative;
+    cursor: pointer;
+    width: 100%;
 }
-#Entrar{
+.botao{
     background: #E0E0E0;
+    margin-top: 7%;
 }
 .linha-traco {
     border-top: 1px solid #616161;
@@ -109,11 +111,7 @@ button {
     width: 25px;
     height: 0;
 }
-.botao {
-    cursor: pointer;
-    width: 100%;
-    color: #ffffff;
-}
+
 .botao:hover {
     background: #181515;
     box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);

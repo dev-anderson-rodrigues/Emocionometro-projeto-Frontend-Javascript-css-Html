@@ -1,6 +1,6 @@
 let corpoTabela = "";
 async function buscarAlunos() {
-  let urlAPI = await fetch("https://json-teste-3jsg48grw-andersonrodrigues1.vercel.app/alunos");
+  let urlAPI = await fetch("https://json-teste-3jsg48grw-andersonrodrigues1.vercel.app/alunos?_sort=nome&_order=desc");
   let aluno = await urlAPI.json();
   let divUsuarios = document.getElementById("usuarios-aluno");
   aluno.forEach((usuario) => {
@@ -54,6 +54,7 @@ const pesquisaAlunos = async () => {
 
 };
 const excluirAluno = async(id)=>{
+    if(confirm('Deseja realmente deletar o usuario?' + id))
     await fetch(`https://json-teste-3jsg48grw-andersonrodrigues1.vercel.app/alunos/${id}`,{method:'DELETE'})
     window.location="aluno.html"
 }
