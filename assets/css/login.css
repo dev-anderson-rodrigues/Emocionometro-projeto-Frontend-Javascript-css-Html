@@ -24,7 +24,6 @@ main {
     width: 100%;
     height: 100vh;
 }
-
 .campo input[type="text"],
 .campo textarea,
 .campo input[type="password"] {
@@ -76,7 +75,10 @@ h1 {
     text-align: left;
     color: black;
 }
-
+#Entrar{
+    background: #E0E0E0;
+    margin-top: 7%;
+}
 .ou-entao{
     display: flex;
     gap: 3px;
@@ -84,7 +86,7 @@ h1 {
     text-align: center;
     color: #616161;
 }
-button {
+.botao {
     border: none;
     font-family: 'Nunito', sans-serif;
     font-size: 1em;
@@ -96,14 +98,9 @@ button {
     color: #ffffff;
     padding: 0.5em 0.6em;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-    text-shadow: 1px 1px 1px rgba(57, 173, 53, 0.5);
     display: relative;
     cursor: pointer;
     width: 100%;
-}
-.botao{
-    background: #E0E0E0;
-    margin-top: 7%;
 }
 .linha-traco {
     border-top: 1px solid #616161;
@@ -116,6 +113,7 @@ button {
     background: #181515;
     box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
     text-shadow: none;
+    transition: 1s;
 }
 .grupo {
     

@@ -1,14 +1,16 @@
 let corpoTabela = "";
+
 async function buscarProfessores() {
-  let urlAPI = await fetch("https://json-teste-eight.vercel.app/professores?_sort=nome&_order=desc");
-  let professor = await urlAPI.json();
   let divUsuarios = document.getElementById("usuarios-prof");
+  let urlAPI = await fetch("https://api-emocionometro.onrender.com/professores");
+  let professor = await urlAPI.json();
+  
   professor.forEach((usuario) => {
     corpoTabela =
       `
         <tr >
             <div id="user">
-                <td >${usuario.nome}</td>
+                <td>${usuario.nome}</td>
                 <td>${usuario.disciplina}</td>
                 <td>${usuario.perfil}</td>
                 <td >${usuario.ativo ? "<img src='../../assets/images/buttonVerdeToogle.png' width='30px' height='20px'/>" : "<img src='../../assets/images/buttonToogleVermelho.png'width='30px' height='20px'/>"}</td>
@@ -16,7 +18,30 @@ async function buscarProfessores() {
             </div>
         </tr>
         ` + corpoTabela;
-        
+  });
+  divUsuarios.innerHTML = corpoTabela;
+  
+}
+async function ordenarNome(){
+  console.log('teste')
+  let divUsuarios = document.getElementById("usuarios-prof");
+  let corpoTabela = ''
+  const novaApiUrl = await fetch("https://api-emocionometro.onrender.com/professores?_sort=nome&_order=desc")
+  let professor = await novaApiUrl.json();
+  
+  professor.forEach((usuario) => {
+    corpoTabela =
+      `
+        <tr >
+            <div id="user">
+                <td>${usuario.nome}</td>
+                <td>${usuario.disciplina}</td>
+                <td>${usuario.perfil}</td>
+                <td >${usuario.ativo ? "<img src='../../assets/images/buttonVerdeToogle.png' width='30px' height='20px'/>" : "<img src='../../assets/images/buttonToogleVermelho.png'width='30px' height='20px'/>"}</td>
+                <td><div class="edit-delet" ><a href="#"><img src="../../assets/images/lapis.svg" alt="" width="20px" height="20px" onclick="editarProfessor(${usuario.id})"></a><a href="#"><img src="../../assets/images/delete.svg" alt="" width="20px" height="20px" onclick="excluirProfessor(${usuario.id})"></a></div></td>
+            </div>
+        </tr>
+        ` + corpoTabela;
   });
   divUsuarios.innerHTML = corpoTabela;
 }
@@ -43,7 +68,7 @@ const mostrarProfessor = (usuariosEncontrados) => {
 const pesquisaProfessores = async () => {
   let searchProf = document.getElementById("pesquisa").value;
   let apiURL = await fetch(
-    `https://json-teste-eight.vercel.app/professores?nome_like=${searchProf}`
+    `https://api-emocionometro.onrender.com/professores?nome_like=${searchProf}`
   );
   let dados = await apiURL.json();
 
@@ -56,7 +81,7 @@ const pesquisaProfessores = async () => {
 };
 const excluirProfessor = async(id)=>{
     if(confirm('Deseja realmente deletar o usuario?' + id))
-    await fetch(`https://json-teste-eight.vercel.app/professores/${id}`,{method:'DELETE'})
+    await fetch(`https://api-emocionometro.onrender.com/professores/${id}`,{method:'DELETE'})
     window.location="professor.html"
 }
 const editarProfessor = (id)=>{

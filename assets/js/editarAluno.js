@@ -9,7 +9,7 @@ const getIdUrl=()=>{
 }
 
 const buscarAluno= async ()=>{
-    const response=await fetch(`https://json-teste-3jsg48grw-andersonrodrigues1.vercel.app/alunos/${alunoId}`)
+    const response=await fetch(`https://api-emocionometro.onrender.com/alunos/${alunoId}`)
     const aluno=await response.json()
     return aluno
     console.log(aluno)
@@ -28,7 +28,7 @@ const carregarDados= async ()=>{
 
 
 const editarAluno = async(aluno)=>{
-    await fetch(`https://json-teste-3jsg48grw-andersonrodrigues1.vercel.app/alunos/${alunoId}`,{
+    await fetch(`https://api-emocionometro.onrender.com/alunos/${alunoId}`,{
         method:'PUT',  
         headers:{
             'Accept': 'application/json, text/plain, */*',

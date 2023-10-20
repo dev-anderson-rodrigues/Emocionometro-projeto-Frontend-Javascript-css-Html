@@ -38,11 +38,14 @@ main {
   padding-top: 15px;
   font-size: 15px;
   height: 50px;
-  
+  outline: none;
 }
 .campo {
     color: white;
     position: relative;
+}
+.campo-oculto{
+    display: none;
 }
 .content-senha {
     color: #00C247;

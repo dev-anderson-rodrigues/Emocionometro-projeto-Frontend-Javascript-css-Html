@@ -1,7 +1,7 @@
 const formulario=document.getElementById('formulario')
 
 const cadastrarProfessor = async (professor)=>{
-    await fetch('https://json-teste-eight.vercel.app/professores',{
+    await fetch('https://api-emocionometro.onrender.com/professores',{
         method:'POST',  
         headers:{
             'Accept': 'application/json, text/plain, */*',
@@ -38,7 +38,7 @@ formulario.addEventListener('submit',(e)=>{
  
 })
 const excluirProfessor = async(id)=>{
-    await fetch(`https://json-teste-eight.vercel.app/professores/${id}`,{method:'DELETE'})
+    await fetch(`https://api-emocionometro.onrender.com/professores/${id}`,{method:'DELETE'})
     window.location="professor.html"
 }
 

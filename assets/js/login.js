@@ -47,7 +47,7 @@ document
     async function autenticarUsuario(email, senha) {
       try {
         const response = await fetch(
-          `https://json-teste-eight.vercel.app/usuarios?email=${email}&senha=${senha}`
+          `https://api-emocionometro.onrender.com/usuarios?email=${email}&senha=${senha}`
         );
         const usuarios = await response.json();
 
@@ -86,7 +86,7 @@ document
       if (!usuario.value === true) {
         setTimeout(function () {
           window.location.href = "/pages/login/loading/loading.html";
-        }, 2000);
+        }, 1500);
       }
     }
   });

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nova senha</title>
     <link rel="stylesheet" href="../../../assets/css/novaSenha.css" />
-    <link src="/assets/js/novaSenha.js">
+    <script src="/assets/js/novaSenha.js" defer></script>
   </head>
   <body>
     <main class="container">
@@ -25,13 +25,13 @@
 
         <h1 class="login-title">Insira uma nova senha</h1>
 
-        <form action="" method="get" id="formulario">
+        <form action="" id="formulario">
           <div class="campo">
             <div class="content-senha">Senha</div>
             <input
               type="text"
-              name="login"
-              id="login"
+              id="senha"
+              name="senha"
               placeholder="Insira uma nova senha"
             />
           </div>
@@ -41,12 +41,11 @@
             <input
               type="password"
               name="senha"
-              id="senha"
               placeholder="Insira uma nova senha"
             />
           </div>
           
-          <button class="botao" id="Entrar" type="submit"><a href="/index.html" class="botao">Entrar</a></button><br />
+          <button class="botao" id="Entrar" type="submit">Enviar</button>
           
         </form>
       </div>

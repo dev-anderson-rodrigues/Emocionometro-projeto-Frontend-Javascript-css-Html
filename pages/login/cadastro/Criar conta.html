@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar conta</title>
+    <link rel="stylesheet" href="/assets/css/criar conta.css">
+    <script src="/assets/js/criar conta.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <div class="list-title">
+            <img src="/assets/images/criar conta.png" alt="" width="80%" >
+        </div>
+
+        <form action="" id="formulario">
+            <div class="tipo-de-pessoa">
+                
+                    <label class="subtitle-form"><span>Tipo de pessoa</span></label>
+                    <div class="inputs">
+                        <div>
+                            <input type="radio"> Pessoa física
+                        </div>
+
+                        <div>
+                            <input type="radio"> Pessoa Jurídica
+                        </div>
+                    </div>
+            
+            </div>
+            
+            <div class="conteudo-form">
+                <div class="subtitle-form"><span>Dados pessoais</span></div>
+
+                <div class="dados-pessoais">
+                    
+                    <div class="Primary-div-dados-pessoais">
+                        <div class="divs-align-left">
+                            <label class="label-left" for="nome">Nome Completo</label>
+                            <input type="text" placeholder="Insira seu nome" name="nome" id="nome">
+                        </div>
+
+                        <div class="divs-align-right">
+                            <label class="label-right" for="cpf">CPF</label>
+                            <input type="text" placeholder="Insira seu CPF" name="cpf" id="cpf">
+                        </div>
+                    </div>
+
+                    <div class="Secondy-div-dados-pessoais">
+                        <div class="divs-align-left">
+                            <label class="label-left" for="celular">Celular</label>
+                            <input type="text" placeholder="Insira seu celular" name="celular" id="celular">
+                        </div>
+
+                        <div class="divs-align-right">
+                            <label class="label-right" for="telefone">Telefone</label>
+                            <input type="text" placeholder="Insira seu telefone" name="telefone" id="telefone">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="DADOS-LOGIN">
+
+                    <div class="subtitle-form"><span>Dados para login</span></div>
+
+                    <div class="dados-pessoais">
+                        
+                        <div class="Primary-div-dados-pessoais">
+                            <div class="divs-align-left">
+                                <label class="label-left" for="email">E-mail</label>
+                                <input type="text" placeholder="Insira seu e-mai" name="email" id="email">
+                            </div>
+
+                            <div class="divs-align-right">
+                                <label class="label-right">Confirmar e-mail</label>
+                                <input type="text" placeholder="Confirme seu e-mail">
+                            </div>
+                        </div>
+
+                        <div class="Secondy-div-dados-pessoais">
+                            <div class="divs-align-left">
+                                <label class="label-left" for="senha">Senha</label>
+                                <input type="text" placeholder="Insira sua senha" name="senha" id="senha">
+                            </div>
+
+                            <div class="divs-align-right">
+                                <label class="label-right">Confirmar senha</label>
+                                <input type="text" placeholder="Confirme sua senha">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn">
+                <button class="botao-p" onclick="pegarDados()">Prosseguir</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
