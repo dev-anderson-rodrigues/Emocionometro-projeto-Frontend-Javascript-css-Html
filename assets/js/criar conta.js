@@ -33,11 +33,11 @@ const cadastrarUsuario = async (usuario)=>{
 
     const usuario={
         nome,
-        cpf,
-        celular,
-        telefone,
         email,
         senha,
+        celular,
+        telefone,
+        cpf,
     }
 
     cadastrarUsuario(usuario)
