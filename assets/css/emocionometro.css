@@ -438,3 +438,48 @@ main .registroLateral {
 .faleconosco:hover .text-faleconosco {
     display: block;
 }
+@media only screen and (max-width: 1850px) {
+    .backgroundGrafico img{
+        width: 100%;
+    }
+    .coresGrafico .vermelhoGrafico{
+        left: 13%;
+    }
+    .coresGrafico .azulGrafico{
+        left: 32%;
+    }
+    .coresGrafico .verdeGrafico{
+        left: 49%;
+    }
+    .coresGrafico .amareloGrafico{
+        left: 67%;
+    }
+    .coresGrafico .roxoGrafico{
+        left: 85%;
+    }
+}
+@media only screen and (max-width: 1500px) {
+    .circuloGrafico img{
+        width: 100%;
+    }
+    .porcentagemNumber #divPorcentagem25{
+        left: 20%;
+        top: 30%;
+    }
+    .porcentagemNumber #divPorcentagem40{
+        left: 40%;
+        top: 70%;
+    }
+    .porcentagemNumber #divPorcentagem05{
+        left: 52%;
+        top: 20%;
+    }
+    .porcentagemNumber #divPorcentagem15{
+        left: 66%;
+        top: 55%;
+    }
+    .porcentagemNumber #divporcentagem15{
+        left: 67%;
+        top: 35%;
+    }
+}
