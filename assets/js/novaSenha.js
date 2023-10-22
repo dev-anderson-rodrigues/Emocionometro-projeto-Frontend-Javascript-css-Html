@@ -9,7 +9,7 @@ const getIdUrl=()=>{
 }
 
 const buscarUsuario= async ()=>{
-    const response=await fetch(`https://api-emocionometro.onrender.com/usuarios/${usuariosId}`)
+    const response=await fetch(`https://json-teste-eight.vercel.app/usuarios/${usuariosId}`)
     const usuario=await response.json()
     return usuario
     console.log(usuario)
@@ -27,7 +27,7 @@ const carregarDados= async ()=>{
 
 
 const editarUsuario = async(usuario)=>{
-    let user = await fetch(`https://api-emocionometro.onrender.com/usuarios/${usuariosId}`,{
+    let user = await fetch(`https://json-teste-eight.vercel.app/usuarios/${usuariosId}`,{
         method:'PUT',  
         headers:{
             'Accept': 'application/json, text/plain, */*',

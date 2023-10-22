@@ -1,5 +1,5 @@
 async function buscarUsuario(email) {
-    const response=await fetch(`https://api-emocionometro.onrender.com/usuarios?email=${email}`)
+    const response=await fetch(`https://json-teste-eight.vercel.app/usuarios?email=${email}`)
     const dados=await response.json()
     
     return dados.filter((usuario) => {

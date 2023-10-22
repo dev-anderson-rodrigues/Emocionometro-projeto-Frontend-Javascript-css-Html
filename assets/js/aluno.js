@@ -1,6 +1,6 @@
 let corpoTabela = "";
 async function buscarAlunos() {
-  let urlAPI = await fetch("https://api-emocionometro.onrender.com/alunos");
+  let urlAPI = await fetch("https://json-teste-eight.vercel.app/alunos");
   let aluno = await urlAPI.json();
   let divUsuarios = document.getElementById("usuarios-aluno");
   aluno.forEach((usuario) => {
@@ -23,7 +23,7 @@ async function ordenarNome(){
   console.log('teste')
   let divUsuarios = document.getElementById("usuarios-aluno");
   let corpoTabela = ''
-  const novaApiUrl = await fetch("https://api-emocionometro.onrender.com/alunos?_sort=nome&_order=desc")
+  const novaApiUrl = await fetch("https://json-teste-eight.vercel.app/alunos?_sort=nome&_order=desc")
   let aluno = await novaApiUrl.json();
   
   aluno.forEach((usuario) => {
@@ -63,7 +63,7 @@ const mostrarAluno = (usuariosEncontrados) => {
 const pesquisaAlunos = async () => {
   let searchAluno = document.getElementById("pesquisa").value;
   let apiURL = await fetch(
-    `https://api-emocionometro.onrender.com/alunos?nome_like=${searchAluno}`
+    `https://json-teste-eight.vercel.app/alunos?nome_like=${searchAluno}`
   );
   let dados = await apiURL.json();
 
@@ -76,7 +76,7 @@ const pesquisaAlunos = async () => {
 };
 const excluirAluno = async(id)=>{
     if(confirm('Deseja realmente deletar o usuario?' + id))
-    await fetch(`https://api-emocionometro.onrender.com/alunos/${id}`,{method:'DELETE'})
+    await fetch(`https://json-teste-eight.vercel.app/alunos/${id}`,{method:'DELETE'})
     window.location="aluno.html"
 }
 const editarAluno = (id)=>{

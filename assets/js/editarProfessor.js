@@ -9,7 +9,7 @@ const getIdUrl=()=>{
 }
 
 const buscarProfessor= async ()=>{
-    const response=await fetch(`https://api-emocionometro.onrender.com/professores/${professorId}`)
+    const response=await fetch(`https://json-teste-eight.vercel.app/professores/${professorId}`)
     const professor=await response.json()
     return professor
     console.log(professor)
@@ -29,7 +29,7 @@ const carregarDados= async ()=>{
 
 
 const editarProfessor = async(professor)=>{
-    await fetch(`https://api-emocionometro.onrender.com/professores/${professorId}`,{
+    await fetch(`https://json-teste-eight.vercel.app/professores/${professorId}`,{
         method:'PUT',  
         headers:{
             'Accept': 'application/json, text/plain, */*',

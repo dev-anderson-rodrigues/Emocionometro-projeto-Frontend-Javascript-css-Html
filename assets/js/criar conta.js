@@ -2,7 +2,7 @@ const btn=document.getElementById('btn')
 formulario = document.getElementById('formulario')
 
 const cadastrarUsuario = async (usuario)=>{
-    await fetch('https://api-emocionometro.onrender.com/usuarios',{
+    await fetch('https://json-teste-eight.vercel.app/usuarios',{
         method:'POST',  
         headers:{
             'Accept': 'application/json, text/plain, */*',

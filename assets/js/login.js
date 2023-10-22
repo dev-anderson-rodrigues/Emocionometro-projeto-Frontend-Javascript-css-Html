@@ -47,7 +47,7 @@ document
     async function autenticarUsuario(email, senha) {
       try {
         const response = await fetch(
-          `https://api-emocionometro.onrender.com/usuarios?email=${email}&senha=${senha}`
+          `https://json-teste-eight.vercel.app/usuarios?email=${email}&senha=${senha}`
         );
         const usuarios = await response.json();
 
