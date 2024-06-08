@@ -1,6 +1,4 @@
-# Emocionometro-projeto-Frontend
-
-# Emocionômetro
+<h1 align="center" style="color:#7f5cd1; font-size:45px;">Emocionometro-projeto-Frontend</h1>
 
 Emocionômetro é uma aplicação desenvolvida para gerenciar emoções de alunos e professores em uma escola chamada “Exemplo”. Este projeto qualifica e demonstra as habilidades adquiridas no módulo 1 do curso de programação. A aplicação foi desenvolvida individualmente e publicada na Vercel.
 
@@ -77,8 +75,8 @@ O Emocionômetro é uma dashboard que retém dados adquiridos de uma API JSON se
 ## Exemplos de Imagens
 
 <p align="center">
-  <img src="https://github.com/AndersonRodrigues1/Emocionometro-projeto-Frontend/assets/127049907/97d9008b-b930-4646-bcde-cbf8aa2e398c" width="200" alt="Primeira Imagem">
-  <img src="https://github.com/AndersonRodrigues1/Emocionometro-projeto-Frontend/assets/127049907/7d816d82-7c1a-4a5b-a64f-60fcb97fd736" width="200" alt="Segunda Imagem">
+  <img src="https://github.com/AndersonRodrigues1/Emocionometro-projeto-Frontend/assets/127049907/97d9008b-b930-4646-bcde-cbf8aa2e398c" width="300" alt="Primeira Imagem">
+  <img src="https://github.com/AndersonRodrigues1/Emocionometro-projeto-Frontend/assets/127049907/7d816d82-7c1a-4a5b-a64f-60fcb97fd736" width="300" alt="Segunda Imagem">
 </p>
 
 ## Como Executar o Projeto
