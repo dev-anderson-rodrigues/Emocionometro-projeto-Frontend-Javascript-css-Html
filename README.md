@@ -1,4 +1,4 @@
-<h1 align="center" style="color:#7f5cd1; font-size:45px;">Emocionometro-projeto-Frontend</h1>
+<h1 align="center" style="color:#7f5cd1; font-size:45px;">Emocionometro projeto Frontend</h1>
 
 Emocionômetro é uma aplicação desenvolvida para gerenciar emoções de alunos e professores em uma escola chamada “Exemplo”. Este projeto qualifica e demonstra as habilidades adquiridas no módulo 1 do curso de programação. A aplicação foi desenvolvida individualmente e publicada na Vercel.
 
